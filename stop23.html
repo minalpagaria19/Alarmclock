@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // alert("hello");
+       //  $(document).ready(function(){
+         //    alert("dfgdg");
+     //    });
+    </script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+<!-- Latest compiled JavaScript -->
+<!-- jQuery library -->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<Style>
+    .box{
+        border:1px solid black;
+        height:620px;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .box1{
+        border:1px solid black;
+        height:620px;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .box11{
+        border:1px solid black;
+        height:310px;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+       
+    }
+    .box111{
+        overflow: auto;
+        height:222px
+    }
+    .box12{
+        border:1px solid black;
+        height:310px;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .listaudio{
+        padding:0px;
+        margin: 0px;
+        overflow: auto;
+    }
+    .listaudio li{
+        background: #ffcaf4;
+          padding: 6px;
+         font-size: 18px;
+         font-weight: bold;
+          border-bottom: 1px solid #a04159;
+          font-family: 'Great Vibes', cursive;
+        font-family: 'Niconne', cursive;
+         
+    }
+    .audio{
+        text-align: center;
+        color: #ffcaf4;
+        background-color: #a04159;
+        margin-top: 0px;
+       margin-bottom: 2px;
+       padding-bottom: 10px;
+       padding-top: 10px;
+       font-family: 'Great Vibes', cursive;
+      font-family: 'Niconne', cursive;
+
+    }
+    .btn{
+        width: 55%;
+    background: #006127;
+    color: white;
+    border: none;
+    text-align: center;
+    margin-left: 76px;
+    }
+    .box21{
+        height: 50px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 27px;
+        background: #c54267;
+        color: aliceblue;
+    }
+    .box22{
+        height: 150px;
+        height: 150px;
+        border: 1px solid black;
+        background: antiquewhite;
+        color: #b11b60;
+        text-align: center;
+        font-size: 53px;
+        line-height: 133px;;
+
+    }
+    .box23{
+        height: 200px;
+        border: 1px solid black;
+        background: #ffcaf4;
+        font-size: 20px;
+        color: chartreuse;
+    }
+    .box24{
+        height:50px;
+        border:1px solid black;
+    }
+    .box25{
+        height:170px;
+        border:1px solid black;
+    }
+    .alarmp{
+        color: #006127;
+        font-size: 29px;
+        font-family: cursive;
+}
+.op{
+    background: black;
+    width: 73%;
+    border: navajowhite;
+    height: 34px;
+
+}
+ .remain{
+    text-align: center;
+    margin-top: 33px;
+ }  
+ .remain button{
+    background: #006127;
+    color: white;
+    padding: 5px 31px;
+    border:none;
+ } 
+ .box251{
+     height:110px;
+ }
+ .box252{
+     height:60px;
+     text-align: center;
+ }
+ .stopstart{
+    padding: 15px 68px;
+    background: #006127;
+    color: white;
+    border:none;
+}
+ .a{
+     display: none;
+ }
+ .main1{
+     position: absolute;
+ }
+ .main2{
+    position: absolute;
+    z-index: 999;
+    height: 624px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    background: #fdfdfdfa;
+    display: none;
+    padding-top: 111px;
+ }
+ #video1{
+    height: 302px;
+ }
+ .box251{
+     font-size: 60px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color:maroon;
+     font-weight: bold;
+     text-align: center;
+ }
+ .box251 span{
+    width: 17%;
+    display: inline-block;
+ }
+ .listaudio button{
+      width:100%;
+      height:47px;
+      background-color: aqua;
+      color:black;
+      font-size:20px;
+      padding: 10px;
+
+ }
+
+ 
+
+</Style>
+</head>
+<body>
+    <div class="main2 container-fluid" id="vedios">
+        <video controls id="video1">
+            <source id="vsc" src="a.mp4">
+        </video>
+    </div>
+    <div class="container-fluid main1">
+    <div class="box col-sm-12 col-xs-12 col-md-12">
+        <div class="col-sm-3 col-xs-12 col-md-3 box1">
+            <div class="col-sm-12 col-xs-12 col-md-12 box11">
+                <h2 class="audio">Audio list</h2>
+                <div class="box111">
+                <ul type="none" class="listaudio">
+                    <li ><input type="radio" id="audio1" name="audio" value="a1.mp3"> hello tune</li>
+                    <li><input type="radio" id="audio2" name="audio" value="a2.mp3"> hello1 tune</li>
+                    <li><input type="radio" id="audio3" name="audio" value="a3.mp3"> hello2 tune</li>
+                    <li><input type="radio" id="audio4" name="audio" value="a2.mp3"> hello3 tune</li>
+                    <li><input type="radio" id="audio5" name="audio" value="a4.mp3"> hello4 tune</li>
+                    <li><input type="radio" id="audio6" name="audio" value="a1.mp3"> hello5 tune</li>
+                    <li><input type="radio" id="audio7" name="audio" value="a2.mp3"> hello5 tune</li>
+                    <li><input type="radio" id="audio8" name="audio" value="a3.mp3"> hello5 tune</li>
+                
+                </ul>
+                </div>
+                <button class="btn" onclick="changeaudio()">set Audio</button>
+
+            </div>
+            <div class="col-sm-12 col-xs-12 col-md-12 box12">
+                <h2 class="audio">Video list</h2>
+                <div class="box111">
+                    <ul type="none" class="listaudio">
+                        <li><input type="radio" id="v1" name="vedio" value="a1.mp4"> hello tune</li>
+                        <li><input type="radio" id="v2" name="vedio" value="a2.mp4"> hello1 tune</li>
+                        <li><input type="radio" id="v3" name="vedio" value="a.mp4"> hello2 tune</li>
+                        <li><input type="radio" id="v4" name="vedio" value="a2.mp4"> hello3 tune</li>
+                        <li><input type="radio" id="v5" name="vedio" value="a1.mp4"> hello4 tune</li>
+                        <li><input type="radio" id="v6" name="vedio" value="a1.mp4"> hello5 tune</li>
+                        <li><input type="radio" id="v7" name="vedio" value="a2.mp4"> hello5 tune</li>
+                        <li><input type="radio" id="v8" name="vedio" value="a.mp4"> hello5 tune</li>
+                    </ul>
+                    </div>
+                    <button class="btn" >set vedio</button>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12 col-md-6 box1">
+            <div class="col-sm-12 col-xs-12 col-md-12 box21">
+                Time
+            </div>
+            <div class="col-sm-12 col-xs-12 col-md-12 box22">
+               
+                <span id="hour"></span>:
+                <span id="minute"></span>:
+                <span id="second"></span>
+                <span id="ampm"></span>
+            </div>
+            <div class="col-sm-12 col-xs-12 col-md-12 box23">
+                   <div class="col-sm-3 col-xs-3 col-md-3">
+                              <p class="alarmp">Hour</p>
+                              <select class="op" id="alarmhour">
+                                  <option value="01">01</option>
+                                  <option value="02">02</option>
+                                  <option value="03">03</option>
+                                  <option value="04">04</option>
+                                  <option value="05">05</option>
+                                  <option value="06">06</option>
+                                  <option value="07">07</option>
+                                  <option value="08">08</option>
+                                  <option value="09">09</option>
+                                  <option value="10">10</option>
+                                  <option value="11">11</option>
+                                  <option value="12">12</option>
+                              </select>
+                   </div>
+                   <div class="col-sm-3 col-xs-3 col-md-3">
+                    <p class="alarmp">Minute</p>
+                    <select class="op" id="alarmmin">
+                        <option value="00">00</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                        <option value="51">51</option>
+                        <option value="52">52</option>
+                        <option value="53">53</option>
+                        <option value="54">54</option>
+                        <option value="55">55</option>
+                        <option value="56">56</option>
+                        <option value="57">57</option>
+                        <option value="58">58</option>
+                        <option value="59">59</option>
+                        <option value="60">60</option>
+                
+                    </select>
+                   </div>
+                   <div class="col-sm-3 col-xs-3 col-md-3">
+                    <p class="alarmp">audio</p>
+                    <select class="op" id="alarmav">
+                        <option value="audio">Audio</option>
+                        <option value="vedio">Vedio</option>
+                    </select>
+                   </div>
+                   <div class="col-sm-3 col-xs-3 col-md-3">
+                    <p class="alarmp">AmPm</p>
+                    <select class="op" id="alarmam">
+                        <option value="am">AM</option>
+                        <option value="pm">PM</option>
+                    </select>
+
+                   </div>
+                   <div class="col-sm-12 col-xs-12 col-md-12 remain">
+                       <button onclick="setalarm()">Set Reminder</button>
+                       <button onclick="stopmusic()">Stop</button>
+                   </div>
+            </div>
+            <div class="col-sm-12 col-xs-12 col-md-12 box24 box21">
+                Stopwatch
+            </div>
+            <div class="col-sm-12 col-xs-12 col-md-12 box25">
+                <div class="col-sm-12 col-xs-12 col-md-12 box251">
+                    <span id="stophou">00</span>:
+                    <span id="stopmin">00</span>:
+                    <span id="stopsec">00</span>:
+                    <span id="stopmilisec">00</span>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-12 box252">
+                    <button class="stopstart" onclick="startstopwatch()">Start Stopwatch</button>
+                    <button class="stopstart" onclick="stoppause()">Pause</button>
+                    <button class="stopstart" onclick="resetstops()">Reset</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-sm-3 col-xs-12 col-md-3 box1">
+            <h2 class="audio">Countries list</h2>
+              <ul type="none" class="listaudio">
+                        <button onclick="difcountries(this)" value="india">India</button>
+                        <button value="landon" onclick="difcountries(this)">landon</li>
+                        <button value="uk" onclick="difcountries(this)"> UK</button>
+                        <button value="aus" onclick="difcountries(this)"> Austrialla</button> 
+                        <button value="japan" onclick="difcountries(this)"> Japan</button>
+                    </ul>
+                    <button class="btn" onclick="dif()" >select Countries</button>
+                  <audio controls id="a1" class="a">
+                      <source  src="a.mp3">
+                  </audio>
+            
+                  
+                          
+                       
+                        
+                  
+                        
+                 
+                    
+              
+                  
+            
+        </div>
+    </div>
+    </div>
+    <script>
+        
+        //function for get diff country time
+        function dif(){
+           
+        }
+        var set12,set13,set14,set15;
+          function difcountries(r){
+                var difc=r.value;
+                console.log(difc);
+            
+                var min,hour,sec;
+                if(difc=="india"){
+                       clearInterval(set13);
+                        clearInterval(set14);
+                        clearInterval(set15);
+                        document.getElementById("hour").innerHTML=" ";
+                        document.getElementById("minute").innerHTML=" ";
+                        document.getElementById("second").innerHTML=" ";
+                        document.getElementById("ampm").innerHTML= "";
+                    set12 = setInterval(sets , 1000);
+                    function sets(){
+                        var d= new Date();
+                            min=d.getMinutes();
+                            hour=d.getHours();
+                            sec=d.getSeconds();
+                            var ampm;
+                            if(hour>=12){
+                                ampm="pm";
+                            }else{
+                                ampm="am"
+                            }
+                            
+                            if(hour>12){
+                                hour=hour-12;
+                            }
+                            if(hour<10){
+                                hour="0"+hour;
+                            }
+                            if(min<10){
+                                min="0"+min;
+                            }
+                            if(sec<10){
+                                sec="0"+sec;
+                            }
+                            document.getElementById("hour").innerHTML=hour;
+                            document.getElementById("minute").innerHTML=min;
+                            document.getElementById("second").innerHTML=sec;
+                            document.getElementById("ampm").innerHTML=ampm;
+                            console.log(hour+":"+min+":"+sec);
+                            
+                    }   
+                    difc="";     
+                    }else if(difc=="landon" || difc=="uk"){
+                        clearInterval(set12);
+                        clearInterval(set14);
+                        clearInterval(set15);
+                        document.getElementById("hour").innerHTML=" ";
+                        document.getElementById("minute").innerHTML=" ";
+                        document.getElementById("second").innerHTML=" ";
+                        document.getElementById("ampm").innerHTML= "";
+                        set13 = setInterval(sets1 , 1000);
+                        function sets1(){
+                                var d1= new Date();
+                                var min,hour,sec;
+                                    min=d1.getMinutes();
+                                    hour=d1.getHours();
+                                    sec=d1.getSeconds();
+                                    var ampm;
+                                var ampm;
+                                    if(hour>12){
+                                        ampm="pm";
+                                    }else{
+                                        ampm="am"
+                                    }
+                                    if(hour<5){
+                                        hour=hour+7;
+                                    } else if(hour>5){
+                                        hour=hour-5;
+                                    }
+                                    if(min<30){
+                                        min=min+30;
+                                        hour--;
+                                    } else if(min>30){
+                                        min=min-30;
+
+                                    }
+                                    if(hour>=12){
+                                        hour=hour-12;
+                                    }
+                                    if(hour<10){
+                                        hour="0"+hour;
+                                    }
+                                    if(min<10){
+                                        min="0"+min;
+                                    }
+                                    if(sec<10){
+                                        sec="0"+sec;
+                                    }
+                                
+                                    document.getElementById("hour").innerHTML=hour;
+                                    document.getElementById("minute").innerHTML=min;
+                                    document.getElementById("second").innerHTML=sec;
+                                    document.getElementById("ampm").innerHTML=ampm;
+                            console.log(hour+":"+min+":"+sec);
+
+                        }
+                    difc="";     
+
+                    }else if(difc=="japan"){
+                        clearInterval(set12);
+                        clearInterval(set13);
+                        clearInterval(set15);
+                        document.getElementById("hour").innerHTML=" ";
+                        document.getElementById("minute").innerHTML=" ";
+                        document.getElementById("second").innerHTML=" ";
+                        document.getElementById("ampm").innerHTML= "";
+                        set14   = setInterval(set2 , 1000);
+                        function set2(){
+                                var d1= new Date();
+                                var min,hour,sec;
+                                    min=d1.getMinutes();
+                                    hour=d1.getHours();
+                                    sec=d1.getSeconds();
+                                    var ampm;
+                                var ampm;
+                                    if(hour>12){
+                                        ampm="pm";
+                                    }else{
+                                        ampm="am"
+                                    }
+                                    if(hour<10){
+                                        hour=hour+3;
+                                    }
+                                    if(min>29){
+                                        min=min-60;
+                                        hour++;
+                                    }
+                                    if(hour>9){
+                                    hour=hour+3-12;
+                                    }
+                                    if(min<29){
+                                    min=min+30;                                                                        
+                                    }
+                                    if(hour>=12){
+                                        hour=hour-12;
+                                    }
+                                    if(hour<10){
+                                        hour="0"+hour;
+                                    }
+                                    if(min<10){
+                                        min="0"+min;
+                                    }
+                                    if(sec<10){
+                                        sec="0"+sec;
+                                    }
+                                    document.getElementById("hour").innerHTML=hour;
+                                    document.getElementById("minute").innerHTML=min;
+                                    document.getElementById("second").innerHTML=sec;
+                                    document.getElementById("ampm").innerHTML=ampm;
+                            console.log(hour+":"+min+":"+sec);
+
+                        }
+                    difc="";     
+                       
+                    }else if(difc=="aus"){
+                        clearInterval(set12);
+                        clearInterval(set13);
+                        clearInterval(set14);
+                        document.getElementById("hour").innerHTML=" ";
+                        document.getElementById("minute").innerHTML=" ";
+                        document.getElementById("second").innerHTML=" ";
+                        document.getElementById("ampm").innerHTML= "";
+                        set15 = setInterval(set5 , 1000);
+                        function set5(){
+                                var d1= new Date();
+                                var min,hour,sec;
+                                    min=d1.getMinutes();
+                                    hour=d1.getHours();
+                                    sec=d1.getSeconds();
+                                    var ampm;
+                                var ampm;
+                                    if(hour>12){
+                                        ampm="pm";
+                                    }else{
+                                        ampm="am"
+                                    }
+                                    if(hour<8){
+                                        hour=hour+5;
+                                    } else if(hour>7){
+                                        hour=hour+5-12;;
+                                    }
+                                    if(min<30){
+                                        min=min+30;
+                                    
+                                    } else if(min>29){
+                                        min=min+30-60;
+                                        hour++;
+
+                                    }
+                                    if(hour>=12){
+                                        hour=hour-12;
+                                    }
+                                    if(hour<10){
+                                        hour="0"+hour;
+                                    }
+                                    if(min<10){
+                                        min="0"+min;
+                                    }
+                                    if(sec<10){
+                                        sec="0"+sec;
+                                    }
+                                
+                                    document.getElementById("hour").innerHTML=hour;
+                                    document.getElementById("minute").innerHTML=min;
+                                    document.getElementById("second").innerHTML=sec;
+                                    document.getElementById("ampm").innerHTML=ampm;
+                            console.log(hour+":"+min+":"+sec);
+
+                        }
+                    difc="";     
+                       
+                    }
+          }
+          //function for set alram
+  
+        var h,m,am,av;
+        function setalarm(){
+            h=document.getElementById("alarmhour").value;
+            m=document.getElementById("alarmmin").value;
+            am=document.getElementById("alarmam").value;
+            av=document.getElementById("alarmav").value;
+            console.log(h);
+            console.log(m);
+            console.log(am);
+            console.log(av);
+
+         //function for set audio anf vedio 
+
+            function getRadioValue(){
+                for(let j=1; j<10; j++){
+                    if (document.getElementById("audio"+j).checked) {
+                        rate_value = document.getElementById("audio"+j).value;
+                        return rate_value;
+                    }  
+                }
+            }
+            function getRadioValue1(){
+                for(let k=1; k<10; k++){
+                    if (document.getElementById("v"+k).checked) {
+                        rate_value1 = document.getElementById("v"+k).value;
+                        return rate_value1;
+                    }  
+                }
+            } 
+            var rate_value1 = getRadioValue1();
+            document.getElementById("vsc").src=rate_value1;
+            document.getElementById("video1").src=rate_value1;  
+            var rate_value = getRadioValue();
+            document.getElementById("a1").src=rate_value;
+         
+        }
+        function stopmusic(){
+            document.getElementById("a1").pause();
+        }
+        var hh,mm,amm;
+        setInterval (() =>{
+            hh=document.getElementById("hour").innerHTML;
+            mm=document.getElementById("minute").innerHTML;
+            amm=document.getElementById("ampm").innerHTML;
+            if(hh==h && mm==m && amm==am){
+                if(av == "audio"){
+                   document.getElementById("a1").play();
+                   document.getElementById("a1").style.display="block";
+                }else{
+                  document.getElementById("vedios").style.display="block";
+                  document.getElementById("video1").play();
+                }
+                console.log(hh);
+            console.log(mm);
+            console.log(amm);
+            }
+        },1000);
+
+      //function for stopwatch
+
+        var clc;
+       function startstopwatch(){
+            clc = setInterval(stat,10);
+           var stopmili=0;
+           var stopsec=0;
+           var stopmin=0;
+           var stophou1=0;
+           function stat(){  
+               if(stopmili==100){
+                   stopmili=0;
+                   stopsec++;
+               }else{
+                document.getElementById("stopmilisec").innerHTML=stopmili;
+                stopmili++;
+               }
+               if(stopsec==60){
+                stopmin++;
+                stopsec=0;
+               }
+               if(stopmin==60){
+                   stophou1++;
+                   stopmin=0;
+               }
+               document.getElementById("stopsec").innerHTML=stopsec;
+               document.getElementById("stopmin").innerHTML=stopmin;
+               document.getElementById("stophou").innerHTML=stophou1;
+           }
+       }
+       function resetstops(){
+              document.getElementById("stopmilisec").innerHTML="00";
+              document.getElementById("stopsec").innerHTML="00";
+               document.getElementById("stopmin").innerHTML="00";
+               document.getElementById("stophou").innerHTML="00";
+              clearInterval(clc);
+            }   
+            function stoppause(){
+                clearInterval(clc);
+            }
+     
+
+       
+    </script>
+</body>
+</html>
